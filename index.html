@@ -6,57 +6,80 @@
   <title>Imperial Defense Group</title>
   <meta name="description" content="Imperial Defense Group: un espacio sobre armamento, tácticas, historia militar y policial, y tendencias actuales en el mundo táctico y armamentístico.">
   <meta name="robots" content="index, follow">
+  <!-- Tipografías tácticas -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #6B6D76;   /* Wolf Grey */
-      --fg: #1a1a1a;   /* Texto oscuro */
-      --muted: #2e2e2e;
-      --accent: #1f5eff; /* Azul táctico */
+      --fg: #111315;   /* Texto principal */
+      --muted: #2c2f33;/* Texto atenuado */
+      --accent: #c1121f; /* Rojo táctico botón */
+      --card: #7a7d86;
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
       background: var(--bg);
       color: var(--fg);
       padding: 0 20px;
-      line-height: 1.6;
+      line-height: 1.65;
     }
     main {
-      max-width: 900px;
+      max-width: 980px;
       margin: auto;
-      padding: 40px 0;
+      padding: 56px 0 48px;
     }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-family: 'Black Ops One', 'Roboto', sans-serif;
+      font-size: 3rem;
+      line-height: 1.1;
+      margin: 0 0 24px;
+      letter-spacing: 1px;
       text-align: center;
+      text-transform: uppercase;
     }
     p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
+      font-size: 1.075rem;
+      margin-bottom: 18px;
+    }
+    .lede {
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+    .panel {
+      background: rgba(255,255,255,0.45);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 20px 18px;
+      margin: 22px 0;
     }
     ul {
       text-align: left;
-      margin: 20px auto;
-      max-width: 800px;
+      margin: 16px auto;
+      max-width: 860px;
+      padding-left: 18px;
     }
-    li {
-      margin-bottom: 12px;
-    }
+    li { margin-bottom: 10px; }
     a.cta {
-      display: block;
-      width: fit-content;
+      display: inline-block;
       margin: 40px auto 0;
       padding: 14px 28px;
-      border-radius: 8px;
+      border-radius: 10px;
       background: var(--accent);
       color: #fff;
-      font-weight: bold;
+      font-weight: 700;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
+      letter-spacing: .3px;
+      box-shadow: 0 6px 16px rgba(193,18,31,0.35);
+      transition: transform .06s ease, box-shadow .2s ease, opacity .2s ease;
     }
-    a.cta:hover {
-      opacity: 0.9;
+    a.cta:hover { opacity: .96; transform: translateY(-1px); box-shadow: 0 8px 18px rgba(193,18,31,0.45); }
+    a.cta:active { transform: translateY(0); }
+    .center { text-align: center; }
+    @media (max-width: 640px) {
+      h1 { font-size: 2.2rem; }
     }
   </style>
 </head>
@@ -64,19 +87,23 @@
   <main>
     <h1>Bienvenido a Imperial Defense Group</h1>
 
-    <p>El mundo táctico y armamentístico es mucho más que equipos y tecnología: es historia, innovación, disciplina y personas que dedican su vida a este ámbito.</p>
+    <p class="lede">El mundo táctico y armamentístico es mucho más que equipos y tecnología: es historia, innovación, disciplina y personas que dedican su vida a este ámbito.</p>
 
-    <p>En este espacio encontrarás artículos sobre:</p>
-    <ul>
-      <li><strong>Armamento y equipamiento táctico:</strong> análisis detallados de armas, relojes militares, textiles avanzados y materiales de última generación.</li>
-      <li><strong>Unidades y operaciones históricas:</strong> un repaso a los cuerpos y formaciones que han marcado la historia militar y policial.</li>
-      <li><strong>Figuras de referencia:</strong> protagonistas, veteranos, diseñadores y especialistas que han dejado huella en este sector.</li>
-      <li><strong>Tendencias actuales:</strong> evolución de la industria, nuevas tecnologías y desarrollos que están cambiando el futuro del ámbito táctico.</li>
-    </ul>
+    <div class="panel">
+      <p>En este espacio encontrarás artículos sobre:</p>
+      <ul>
+        <li><strong>Armamento y equipamiento táctico:</strong> análisis detallados de armas, relojes militares, textiles avanzados y materiales de última generación.</li>
+        <li><strong>Unidades y operaciones históricas:</strong> un repaso a los cuerpos y formaciones que han marcado la historia militar y policial.</li>
+        <li><strong>Figuras de referencia:</strong> protagonistas, veteranos, diseñadores y especialistas que han dejado huella en este sector.</li>
+        <li><strong>Tendencias actuales:</strong> evolución de la industria, nuevas tecnologías y desarrollos que están cambiando el futuro del ámbito táctico.</li>
+      </ul>
+    </div>
 
     <p>Nuestro objetivo es ofrecer información rigurosa, con una visión crítica y en profundidad, para quienes buscan ir más allá de lo superficial y comprender verdaderamente este mundo.</p>
 
-    <a class="cta" href="/articulos/">Ir a los artículos</a>
+    <p class="center">
+      <a class="cta" href="/articulos/">Ir a los artículos</a>
+    </p>
   </main>
 </body>
 </html>
