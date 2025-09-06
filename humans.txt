@@ -1,0 +1,10 @@
+/* TEAM */
+Principal: Imperial Defense Group
+Twitter: https://x.com/
+Location: España
+
+
+/* SITE */
+Language: es
+Generator: HTML puro + GitHub Pages
+From: Madrid, España
